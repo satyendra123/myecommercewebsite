@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box; /* Apply border-box to all elements */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit-based browsers (Chrome, Safari, Edge) */
+}
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y:auto;
+}
+
+/* Hide scrollbars in WebKit browsers */
+body::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Hide scrollbars in Firefox */
+body {
+  scrollbar-width: none; /* For Firefox */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

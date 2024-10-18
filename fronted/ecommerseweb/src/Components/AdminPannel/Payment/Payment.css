@@ -1,0 +1,42 @@
+.Payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+.Payment-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Payment-row {
+    color: white;
+    background-color: #be123c;
+    border: none;
+}
+
+.Payment-column {
+    padding: 12px 8px;
+    text-align: center;
+    border: none;
+}
+
+.Payment-column:first-child, 
+.Payment-data-row-even td:first-child, 
+.Payment-data-row-odd td:first-child {
+    padding-left: 10px;
+    text-align: left;
+    padding: 12px
+}
+
+.Payment-data-row-even {
+    background-color: white;
+    text-align: center;
+}
+
+.Payment-data-row-odd {
+    background-color: #f1f5f9;
+    text-align: center;
+}

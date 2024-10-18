@@ -1,0 +1,36 @@
+.Order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Order-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Order-row {
+    color: white;
+    background-color: #be123c;
+    border: none;
+}
+
+.Order-column {
+    padding: 12px 8px;
+    text-align: center;
+    border: none;
+}
+
+.Order-data-row-even {
+    background-color: white;
+    text-align: center;
+}
+
+.Order-data-row-odd {
+    background-color: #f1f5f9;
+    text-align: center;
+}
+
+.Order-select-status{
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+}

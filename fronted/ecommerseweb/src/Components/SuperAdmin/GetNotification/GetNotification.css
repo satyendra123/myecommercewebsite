@@ -1,0 +1,30 @@
+.GetNotification-container {
+    height: 20vh;
+    width: 100vw;
+    background-color: #FEA821;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.GetNotification-input {
+    margin-top:-30px;
+    width: 35vw;
+    height: 50px;
+    font-size: 16px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+    .GetNotification-input {
+        width: 90%; /* Set input width to 90% on mobile */
+        height: 50px; /* Maintain height on mobile */
+    }
+    .GetNotification-heading{
+        font-size: 1.2rem; /* Adjust font size for mobile screens */
+        white-space: nowrap; /* Ensure heading is in one line */
+    }
+}

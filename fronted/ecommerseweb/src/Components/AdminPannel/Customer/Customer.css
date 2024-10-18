@@ -1,0 +1,54 @@
+.Customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+.profile-pic{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+.Customer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Customer-row {
+    color: white;
+    background-color: #be123c;
+    border: none;
+}
+
+.Customer-column {
+    padding: 0px 8px;
+    text-align: center;
+    border: none;
+}
+
+.Customer-column:first-child, 
+.Customer-data-row-even td:first-child, 
+.Customer-data-row-odd td:first-child {
+    text-align: left;
+    padding: 12px
+}
+
+.Customer-data-row-even {
+    background-color: white;
+    text-align: center;
+}
+
+.Customer-data-row-odd {
+    background-color: #f1f5f9;
+    text-align: center;
+}
+
+.customer-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
+}

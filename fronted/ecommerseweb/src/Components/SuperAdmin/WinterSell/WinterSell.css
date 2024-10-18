@@ -1,0 +1,82 @@
+.winterSell-container{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.WinterSell-container-data{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.WinterSell-image-container{
+    margin-left:80px;
+    align-self: streatch;
+}
+.WinterSell-image{
+    width:80%;
+    height:auto;
+    object-fit: cover;
+}
+
+.WinterSell-list {
+    display: flex;
+    align-items: center; /* Aligns the items vertically in the center */
+    gap: 8px; /* Adds some space between the icon and text */
+}
+.WinterSell-list-container{
+    display:flex;
+    flex-direction: column;
+}
+.WinterSell-list-data {
+    margin: 20px; /* Removes any default margin */
+}
+.WinterSell-list-icon {
+    background-color: orange; /* Add your desired background color */
+    padding: 10px;
+    margin-bottom: 4px;
+    border-radius: 50%; /* Make the icon background circular */
+    display: flex;
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+    width: 20px; /* Control the width of the icon container */
+    height: 20px; /* Control the height of the icon container */
+}
+
+.icon-Quality{
+    background-color: #EDE9FE;
+}
+.icon-shippingfast{
+    background-color: #FFEDD5;
+}
+
+.icon-creditcard{
+    background-color:#DCFCE7;
+}
+
+.icon-FaTags{
+    background-color:#FEF9C3;
+}
+
+.WinterSell-text-heading{
+    margin-top: -5px;
+}
+
+/* Add media query for mobile screens */
+@media (max-width: 768px) {
+    * {
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
+    .WinterSell-container-data {
+      grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+    .WinterSell-image{
+        width:90%;
+        height:auto;
+        object-fit: cover;
+        margin-left: -10px;
+    }
+  }

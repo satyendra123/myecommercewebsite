@@ -1,0 +1,73 @@
+.banner-container{
+    min-height:550px;
+    min-width: 100%;
+    background-color: #f3f4f6;
+    position:relative;
+    overflow: hidden;
+    z-index: -20;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-background {
+    width: 700px;
+    height: 700px;
+    background-color: #FFDDA9; 
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    border-radius: 1.5rem;
+    transform: rotate(45deg);
+    z-index: -9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner-hero-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-text-section{
+    margin:0 30px;
+  }
+  .banner-heading{
+    font-size: 4.5rem;
+    line-height: 80px;
+    text-transform: capitalize;
+  }
+
+  .image1{
+    height: 50%;
+    width:70%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .banner-container{
+      padding-bottom:2rem;
+    }
+    /* For screens smaller than 768px, stack the grid vertically */
+    .banner-hero-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+  
+    .banner-image-section {
+        grid-row: 1; /* Image is in the first row */
+    }
+  
+    .banner-text-section {
+        grid-row: 2; /* Text is in the second row */
+    }
+  
+    .image1 {
+        width: 100%;
+        height: auto;
+    }
+  
+    .banner-heading {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+}

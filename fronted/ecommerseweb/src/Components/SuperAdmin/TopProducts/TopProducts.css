@@ -1,0 +1,105 @@
+.TopProducts-container{
+    margin:20px;
+}
+
+.TopProducts-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    margin: 120px 0 0px 90px;
+}
+
+.TopProducts-card {
+    background-color: white;
+    border-radius: 1rem;
+    max-width: 300px;
+    height:220px;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    transition: background-color 0.3s ease;
+}
+.TopProducts-card:hover .TopProducts-card-text {
+    color: white;
+}
+
+.TopProducts-card:hover .TopProducts-card-image > img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.TopProducts-card:hover {
+    background-color: #333333;
+    color: white;
+}
+.TopProducts-card-image {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.TopProducts-card-text{
+    color:grey;
+}
+.TopProducts-card-image > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.TopProducts-card-description {
+    padding:60px 0;
+}
+.TopProducts-card-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.TopProducts-heading {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.TopProducts-subheading {
+    line-height: 6px;
+    margin-bottom: 20px;
+}
+
+.TopProducts-description {
+    color: grey;
+}
+
+@media (max-width: 768px) {
+
+    .TopProducts-container{
+        margin-bottom:60px;
+    }
+    .TopProducts-card-container {
+        display: flex; /* Use flexbox instead of grid for mobile */
+        flex-direction: column; /* Stack the cards vertically */
+        gap: 60px; /* Adjust the gap between cards */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center items within the container */
+        margin: 60px auto; /* Center the container with auto margins */
+        padding: 0 20px; /* Add some padding to prevent the cards from touching screen edges */
+        margin-bottom:60px;
+    }
+
+    .TopProducts-card {
+        width: 100%; /* Ensure card takes full width on mobile */
+        max-width: 300px; /* Limit the maximum width of each card */
+        margin: 40 auto; /* Center the card horizontally */
+    }
+
+    .TopProducts-card-image {
+        top: -20%; /* Adjust image position to better fit mobile layout */
+    }
+
+    .TopProducts-card-description {
+        padding: 90px 0; /* Adjust padding for a more spacious look on mobile */
+    }
+}

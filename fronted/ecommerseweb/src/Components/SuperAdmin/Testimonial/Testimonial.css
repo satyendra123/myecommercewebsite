@@ -1,0 +1,54 @@
+.Testimonial-card-container {
+    display: flex;
+    gap: 100px; /* Space between cards */
+    margin-left: 40px;
+}
+
+.Testimonial-card-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF6E9;
+    width: 80%;
+    height: 20%;
+    padding: 40px 0px 5px 20px ;
+}
+
+.Testimonial-image1 {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.Testimonial-card-heading{
+    color:#33312F ;
+    line-height: 2px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .Testimonial-card-container {
+        flex-direction: row; /* Keeps cards in a single row */
+        width: 90%; /* Ensures the card takes full width */
+    }
+
+    .Testimonial-card-body {
+        min-width: 100%;
+        box-sizing: border-box; /* Includes padding in width calculations */
+        margin:0 auto;
+    }
+
+    
+.Testimonial-card-heading{
+    color:#33312F ;
+    line-height: 2px;
+    margin-bottom: 20px;
+}
+
+.Testimonial-card-paragraph{
+    margin-bottom: 20px;
+}
+    /* Optionally hide gaps on mobile for a cleaner look */
+    .Testimonial-card-container {
+        gap: 0; 
+    }
+}

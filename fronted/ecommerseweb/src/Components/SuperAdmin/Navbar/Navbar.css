@@ -1,0 +1,219 @@
+.logoset{
+    display:flex;
+}
+
+.logoimage {
+    width: 50px; /* or any appropriate size */
+    height: auto;
+}
+
+.Navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    position: relative;
+    z-index: 50;
+}
+
+.logo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.Navbar-container {
+    width: 100%;
+    background-color: #FFDDA9;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search{
+    padding: 10px;
+    border-radius: 20px; /* Circular corners */
+    border: 1px solid #ddd;
+    padding-right: 35px; /* Space for the search icon */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
+.cart-container {
+    background-color: darkorange;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Default size with icon only */
+    height: 10px;
+    transition: width 0.3s ease; /* Smooth transition */
+}
+.cart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+}
+.cart-text {
+    display: none;
+    font-size: 14px;
+    color: white;
+    margin-right: 5px;
+}
+.cart-icon {
+    font-size: 20px;
+}
+
+.cart-container:hover {
+    width: 100px; /* Expanded width when hovered */
+    padding: 10px 15px; /* Adjust padding to keep the same visual style */
+}
+
+
+.cart-container:hover .cart-text {
+    display: inline-block; /* Show the "Order" text on hover */
+}
+
+/* Toggle container with oval background */
+.toggle-container {
+    background-color: orange; /* Green background for toggle button */
+    padding: 10px;
+    border-radius: 30px; /* Oval shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 15px;
+}
+/* Hide the "Order" text by default */
+.cart-text {
+    display: none;
+    font-size: 14px;
+    color: white;
+    margin-right: 5px; 
+}
+.cart-container:hover .cart-text {
+    display: block; 
+}
+
+/* Styling for the toggle button */
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white; /* Color of the toggle icon */
+    width:100px;
+}
+
+/*   below navbar       */
+
+.Navbar-below-container{
+    width:100%;
+    background-color:white;
+    border:2px solid green;
+    position:relative;
+    z-index:50;
+
+}
+.Navbar-below-ullist{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:80px;
+    position:relative;
+}
+
+.Navbar-below-list{
+    list-style: none;
+
+}
+
+.navbar-below-link{
+    text-decoration: none;
+    color:black;
+    font-weight:30px;
+}
+
+.Navbar-below-list-trending{
+    position:absolute;
+    top:0px;
+    right:30px;
+    list-style:none;
+}
+
+.Navbar-below-list-trending {
+    position: relative; /* Allows the dropdown to position itself absolutely */
+  }
+  
+  .dropdown-menu {
+    width:100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .Navbar-below-list-trending:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 4px; /* Add some padding to the dropdown items */
+    list-style: none;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .Navbar-below-list-trending:hover .caret-icon {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 768px) {
+    .search-container {
+      display: none;
+    }
+    .Navbar-below-container{
+        display:none;
+  }
+}

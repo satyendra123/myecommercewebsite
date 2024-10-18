@@ -1,0 +1,36 @@
+.UserPannel-navbar-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        padding: 0; /* Ensure there's no padding */
+        margin: 0;  /* Ensure there's no margin */
+    }
+.UserPannel-navbar-logo{
+    padding:8px;
+}
+.UserPannel-navbar-link-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap:2px;
+}
+.Navbar-logo{
+    width:20%;
+    height:20%;
+}
+.UserPannel-navbar-link-list li {
+    margin-right: 50px; /* Adjust this value as needed */
+}
+
+.UserPannel-navbar-link{
+    white-space: nowrap;
+    text-decoration: none;
+    padding:10px;
+}
+
+.UserPannel-navbar-link:hover{
+    background-color: #dc2626;
+    color:white;
+}

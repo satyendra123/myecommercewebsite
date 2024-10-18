@@ -1,0 +1,29 @@
+.Category-container{
+    padding:8px;
+    margin: 10px 200px;
+}
+
+.Category-items{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:16px;
+}
+
+.items {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+.category-items-icons{
+    font-size: 100px;
+}
+.items:hover {
+    background-color: #ea580c;
+    color:white;
+}
